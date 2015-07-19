@@ -89,6 +89,9 @@ abstract class Client {
   Future<Response> put(url, {Map<String, String> headers, body,
       Encoding encoding});
 
+  Future<Response> patch(url, {Map<String, String> headers, body,
+  Encoding encoding});
+
   /// Sends an HTTP DELETE request with the given headers to the given URL,
   /// which can be a [Uri] or a [String].
   ///

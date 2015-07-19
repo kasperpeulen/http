@@ -78,6 +78,11 @@ abstract class BaseClient implements Client {
       Encoding encoding}) =>
     _sendUnstreamed("PUT", url, headers, body, encoding);
 
+  Future<Response> patch(url, {Map<String, String> headers, body,
+  Encoding encoding}) =>
+  _sendUnstreamed("PATCH", url, headers, body, encoding);
+
+
   /// Sends an HTTP DELETE request with the given headers to the given URL,
   /// which can be a [Uri] or a [String].
   ///
